@@ -192,16 +192,28 @@ namespace Week2_Day2
             //    Console.WriteLine(i);
             //}
 
-            for (int i = 1; i <= 20; i++)
-            {
-                if (i % 13 == 0)
-                {
-                    break;
-                }
-                Console.WriteLine(i);
-            }
-            Console.WriteLine("The loop has finished.");
 
+            ////Nested loops
+            //for (int i = 1; i <= 4; i++)
+            //{
+            //    for (int j = 1; j <= 8; j++)
+            //    {
+            //        Console.Write(j); //columns
+            //    }
+
+            //    Console.WriteLine(); //next row
+            //}
+
+
+            int n = int.Parse(Console.ReadLine());
+            for(int row = 1; row <= n; row++)
+            {
+                for (int col = 1; col <= row; col++)
+                {
+                    Console.Write(col + " ");
+                }
+                Console.WriteLine();
+            }
 
 
 
