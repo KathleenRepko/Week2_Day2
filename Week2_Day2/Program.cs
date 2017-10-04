@@ -61,18 +61,18 @@ namespace Week2_Day2
 
 
             //string[] bands = { "The Trews", "Sam Roberts Band", "Tragically Hip", "The Sheepdogs", "Arkells" };
-            //foreach(string band in bands)
+            //foreach (string band in bands)
             //{
             //    Console.WriteLine(band);
             //}
 
             //Write a program that takes your favorite foods and prints them out one at a time. (Use a foreach loop.)
 
-            string[] favFoods = { "ribs", "pierogi", "steak", "mussels", "crabcakes" };
-            foreach (string food in favFoods)
-            {
-                Console.WriteLine(food);
-            }
+            //string[] favFoods = { "ribs", "pierogi", "steak", "mussels", "crabcakes" };
+            //foreach (string food in favFoods)
+            //{
+            //    Console.WriteLine(food);
+            //}
 
             //Create an array of lucky numbers(just any numbers you like). Using a foreach loop, print the following:
             //If the array holds the numbers 3, 5, 7, 11, 15, then the printed result should say
@@ -82,22 +82,12 @@ namespace Week2_Day2
             //Your Lucky Number is: 11
             //Your Lucky Number is: 15
 
-            int[] luckyNumbers = { 42, 33, 7, 17, 6, 21 };
-            //Array.Sort(luckyNumbers);
-            foreach (int number in luckyNumbers)
-            {
-                Console.WriteLine("Your Lucky Number is: " + number);
-            }
-
-
-
-
-
-
-
-
-
-
+            //int[] luckyNumbers = { 42, 33, 7, 17, 6, 21 };
+            ////Array.Sort(luckyNumbers);
+            //foreach (int number in luckyNumbers)
+            //{
+            //    Console.WriteLine("Your Lucky Number is: " + number);
+            //}
 
 
             //for(int i = 0; i <= 10; i++)
@@ -117,6 +107,61 @@ namespace Week2_Day2
             //{
             //    Console.WriteLine(words[i]);
             //}
+
+
+            //for(int i = 10; i > 0; i--)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+
+            //Console.WriteLine("Do you want to play the game? (YES/NO)");
+            //string playAgain = Console.ReadLine();
+            //while(playAgain == "YES")
+            //{
+            //    Console.WriteLine("It's a rematch!");
+            //    Console.WriteLine("Do you want to play again (YES/NO)");
+            //    playAgain = Console.ReadLine();
+            //}
+
+
+            //Ask the user if he / she / they would like to check the patient in for his / her / their appointment
+            //Using a While Loop, run the following sequence only if the user's answer is not YES
+            //Print "PATIENT CHECK IN SYSTEM"
+            //Ask the user for the client's full name
+            //Ask the user for the client's 6-digit patient ID
+            //Ask the user for the client's appointment time (i.e. 2:00 PM)
+            //Ask the user if he / she / they would like to check the patient in for his / her / their appointment
+
+            //Console.WriteLine("Would you like to check the patient in for the patient's appointment? (YES/NO)");
+            //string checkIn = Console.ReadLine().ToUpper();
+            //while (checkIn == "YES" )
+            //{
+            //    Console.WriteLine("PATIENT CHECK IN SYSTEM");
+            //    Console.WriteLine("Please enter patient's full name.");
+            //    string patientName = Console.ReadLine();
+            //    Console.WriteLine("Please enter patient's six-digit ID number.");  //How to limit int to 6 digits?
+            //    int patientID = int.Parse(Console.ReadLine());
+            //    Console.WriteLine("Please enter patient's appointment time (e.g., 2:00 PM)");
+            //    string apptTime = Console.ReadLine();
+            //    Console.WriteLine("Would you like to complete the check-in process for this patient? (YES/NO)");
+            //    string checkInComplete = Console.ReadLine();
+            //    Console.WriteLine("Would you like to check in another patient? (YES/NO)");
+            //    checkIn = Console.ReadLine().ToUpper();
+            //}
+
+
+            string playAgain;
+            do
+            {
+                //Console.WriteLine("Do you want to play the game? (YES/NO)");
+                Console.WriteLine("Great game!");
+                Console.WriteLine("Do you want to play again? (YES/NO)");
+                playAgain = Console.ReadLine();
+            }
+            while (playAgain == "YES");
+
+             
 
         }
     }
