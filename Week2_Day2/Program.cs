@@ -140,7 +140,7 @@ namespace Week2_Day2
             //    Console.WriteLine("PATIENT CHECK IN SYSTEM");
             //    Console.WriteLine("Please enter patient's full name.");
             //    string patientName = Console.ReadLine();
-            //    Console.WriteLine("Please enter patient's six-digit ID number.");  //How to limit int to 6 digits?
+            //    Console.WriteLine("Please enter patient's six-digit ID number.");  //How to limit int to 6 digits? GetIntegerDigitCount
             //    int patientID = int.Parse(Console.ReadLine());
             //    Console.WriteLine("Please enter patient's appointment time (e.g., 2:00 PM)");
             //    string apptTime = Console.ReadLine();
@@ -151,18 +151,62 @@ namespace Week2_Day2
             //}
 
 
-            string playAgain;
-            do
-            {
-                //Console.WriteLine("Do you want to play the game? (YES/NO)");
-                Console.WriteLine("Great game!");
-                Console.WriteLine("Do you want to play again? (YES/NO)");
-                playAgain = Console.ReadLine();
-            }
-            while (playAgain == "YES");
+            //string playAgain;
+            //do
+            //{
+            //    Console.WriteLine("Great game!");
+            //    Console.WriteLine("Do you want to play again? (YES/NO)");
+            //    playAgain = Console.ReadLine();
+            //}
+            //while (playAgain == "YES");
 
-             
+            //Console.WriteLine("Thanks for playing the game.");
+
+
+            //Ask the user for the class they would like to add to their GPA calculation
+            //Ask the user for the letter grade for the class (no + or - grades)
+            //Ask the user if they have another class they would like to add to their GPA calculation
+            //Using a Do While Loop, repeat the code if the user says "YES"
+
+            //string className;
+            //char classGrade;
+            //string anotherClass;
+            //do
+            //{
+            //    Console.WriteLine("Please enter the name of the class you would like to add to your GPA calculation.");
+            //    className = (Console.ReadLine());
+            //    Console.WriteLine("Please enter the letter grade for that class. (no +/-)");
+            //    classGrade = char.Parse(Console.ReadLine());
+            //    Console.WriteLine("Would you like to add another class to your GPA calculation? (YES/NO)");
+            //    anotherClass = (Console.ReadLine().ToUpper());
+            //}
+            //while (anotherClass == "YES");
+
+
+            //for(int i= 0; i < 20; i++)
+            //{
+            //    if (i % 2 == 0)
+            //    {
+            //        continue;
+            //    }
+            //    Console.WriteLine(i);
+            //}
+
+            for (int i = 1; i <= 20; i++)
+            {
+                if (i % 13 == 0)
+                {
+                    break;
+                }
+                Console.WriteLine(i);
+            }
+            Console.WriteLine("The loop has finished.");
+
+
+
 
         }
+
     }
+
 }
